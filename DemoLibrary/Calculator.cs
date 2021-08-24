@@ -49,5 +49,11 @@ namespace DemoLibrary
                 return 0;
             }
         }
+
+
+        public static double CircleRadius(double r)
+        {
+            return r * Math.PI;
+        }
     }
 }

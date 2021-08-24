@@ -121,5 +121,25 @@ namespace DemoLibrary.Tests
             Assert.Equal(expected, actual);
         }
 
+
+
+        [Theory]
+        [InlineData(4 , 2 , 2)]
+        [InlineData(1 , 2 , 1)]
+        [InlineData(100 , 2 ,  10)]
+        [InlineData(10 , 1 , 10)]
+        public void SQRT_SimpleValuesShouldCalculate(double x , double root , double expected)
+        {
+            //Arrange 
+
+            //Act
+            double actual = Calculator.SQRT(x, root);
+
+            //Assert
+            Assert.Equal(expected, actual);
+        }
+
+
+
     }
 }

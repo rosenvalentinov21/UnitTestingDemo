@@ -32,6 +32,11 @@ namespace DemoLibrary
             return x;
         }
 
+        public static double SQRT(double x , double root)
+        {
+            return Math.Pow(x, 1 / root);
+        }
+
         public static double Divide(double x, double y)
         {
             if (y != 0)
